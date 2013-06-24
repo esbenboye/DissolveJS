@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <script type="text/javascript" src="dissolve.js"></script>      
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+    </style>
+    <script src="http://d3lp1msu2r81bx.cloudfront.net/kjs/js/lib/kinetic-v4.5.4.min.js"></script>
+   
+  </head>
+  <body onmousedown="return false;">
+    <div id="container" style="width:200;height:200;"></div>
+     <script defer="defer">
+		var stage = new Kinetic.Stage({
+        	container: 'container',
+        	width: 200,
+        	height: 200
+    	});
+	    var drawLayer = new Kinetic.Layer();
+	    stage.add(drawLayer);
+	    displaySlices('yoda.jpg', 100, 100, drawLayer);
+	    // displaySlices(imageSource, numberOfSlices, interval, drawLayer);
+	    //displaySlices('dv.jpg', 10, 100, drawLayer);
+     </script>
+  </body>
+</html>
